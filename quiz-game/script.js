@@ -84,7 +84,7 @@ function cargarPlace() {
     }
 }
 function iniciarTemporizador() {
-    let tiempoRestante = 10; // 10 segundos inicialmente
+    let tiempoRestante = 15; // 10 segundos inicialmente
     const temporizadorElement = document.getElementById("temporizador");
 
     temporizadorElement.textContent = tiempoRestante;
