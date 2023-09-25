@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>City Quiz</title>
+</head>
+<body>
+    <!-- Pantalla inicial -->
+    <div id="initial-screen">
+        <h1>Welcome to City Quiz!</h1>
+        <p>Test your knowledge of famous cities and landmarks around the world. You will be shown an image of a famous place and your task is to guess its location.</p>
+        <p>There are a total of 10 questions. Click "Start Attempt" to begin.</p>
+        <button class="btn" onclick="comenzarJuego()">START ATTEMPT</button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="game-screen" id="game-screen">
+    <div class="pregunta" id="pregunta"></div>
+        
+        <img src="" alt="" id="imgPlaces">
+        <div class="opciones">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+            <div class="opcion" id="op3" onclick="comprobarRespuesta(3)">
+                <div class="letra" id="l3">D</div>
+                <div class="nombre" id="n3">OPCION D</div>
+            </div>
+            <div class="temporizador" id="temporizador">10</div>
+        </div>
+    </div>
+
+    <!-- Pantalla final -->
+    <div id="final-screen">
+        <h2>CORRECTS: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECTS: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">BACK TO HOME</button>
+    </div>
+
+    <footer>GAME - ENGLISH EVALUATION 2</footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
